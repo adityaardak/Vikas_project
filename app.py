@@ -1,5 +1,4 @@
 import streamlit as st
 
-st.title("Basic Setup")
-
-st.write("Hello, Vikas College!")
+st.header("This is a header")
+st.subheader("This is a subheader")
