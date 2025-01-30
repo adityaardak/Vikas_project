@@ -1,6 +1,4 @@
 import streamlit as st
 
-if st.button("Click Me!"):
-  st.write("You have clicked on the button.")
-else:
-  st.write("Button not clicked yet")
+slider_value = st.slider("Select a value using the slider: ", min_value = 0, max_value = 50, value = 50)
+st.write(f"You have selected {slider_value}")
