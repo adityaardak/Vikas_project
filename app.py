@@ -1,6 +1,5 @@
 import streamlit as st
 
-user_name = st.text_input("Enter your username: ", placeholder = "Type Here...")
+user_age = st.number_input("Enter your age: ", min_value = 0, max_value = 60, value = 30)
 
-if user_name:
-  st.write(f"Hello, {user_name}")
+st.write(f"Your age is {user_age}")
