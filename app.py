@@ -1,15 +1,6 @@
 import streamlit as st
-import pandas as pd
 
-st.header("This is a header")
-st.subheader("This is a subheader")
+user_name = st.text_input("Enter your username: ", placeholder = "Type Here...")
 
-data = {
-  "Fruit": ["Apple", "Banana", "Cherry"],
-  "Price": [12, 8, 2.5],
-  "Quantity": [1, 2, 1]
-}
-
-df = pd.DataFrame(data)
-st.dataframe(df)
-
+if user_name:
+  st.write(f"Hello, {user_name}")
